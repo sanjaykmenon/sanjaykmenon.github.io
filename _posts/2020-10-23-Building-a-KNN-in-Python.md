@@ -27,11 +27,15 @@ I’ve made a split, for training our algorithm and then testing it on the test 
 
 We will define a class ‘KNN’ inside which we will define every essential function that will make our algorithm work. We will be having the following methods inside our class.
 
-    fit: As discussed earlier, it’ll just keep the data with itself, since KNN does not perform any explicit training process.
-    Distance: We will calculate Euclidean distance here.
-    Predict: This is the phase where we will predict the class for our testing instance using the complete training data. We will implement the 3 stepped process discusses above in this method.
-    Score: Finally We’ll have a score method, to calculate the score for our model based on the test data
-    What about ‘K’ ?: The most important guy here is K, we will pass ‘K’ as an argument while initializing the object for our KNN class(inside __init__)
+fit: As discussed earlier, it’ll just keep the data with itself, since KNN does not perform any explicit training process.
+
+Distance: We will calculate Euclidean distance here.
+
+Predict: This is the phase where we will predict the class for our testing instance using the complete training data. We will implement the 3 stepped process discusses above in this method.
+    
+Score: Finally We’ll have a score method, to calculate the score for our model based on the test data
+
+What about ‘K’ ?: The most important guy here is K, we will pass ‘K’ as an argument while initializing the object for our KNN class(inside __init__)
 
 Here is a good picture I got for an idea about various distance metrics used:
 Each one of them can be easily calculated using their Numpy inbuild functions or can also be coded directly if you want.
@@ -75,16 +79,15 @@ class KNN:
     
     ```
 
-    We will pass the K while creating an object for the class ‘KNN’.
+We will pass the K while creating an object for the class ‘KNN’.
 
-    Fit method just takes in the training data, nothing else.
+Fit method just takes in the training data, nothing else.
 
-    We used scipy.spatial.distance.euclidean for calculating the distance between two points.
+We used scipy.spatial.distance.euclidean for calculating the distance between two points.
 
-    Predict method runs a loop for every test data point, each time calculating distance between the test instance and every training instance. It stores distance and index of the training data together in a 2D list. It then sorts that list based on distance and then updates the list keeping only the K shortest distances(along with their indices) in the list.
+Predict method runs a loop for every test data point, each time calculating distance between the test instance and every training instance. It stores distance and index of the training data together in a 2D list. It then sorts that list based on distance and then updates the list keeping only the K shortest distances(along with their indices) in the list.
 
-    It then pulls out labels corresponding to those K nearest data points and checks which label has the majority using Counter. That majority label becomes the label of the test data point.
+It then pulls out labels corresponding to those K nearest data points and checks which label has the majority using Counter. That majority label becomes the label of the test data point.
 
-    Score method just compares our test output with their actual output to find the accuracy of our prediction.
+Score method just compares our test output with their actual output to find the accuracy of our prediction.
 
-    
