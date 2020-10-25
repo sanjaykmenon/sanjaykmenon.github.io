@@ -77,7 +77,7 @@ class KNN:
         predictions = self.predict(X_test)
         return (predictions == y_test).sum() / len(y_test)
     
-    ```
+```
 
 We will pass the K while creating an object for the class ‘KNN’.
 
