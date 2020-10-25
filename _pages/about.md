@@ -1,22 +1,19 @@
 ---
-layout: content
+layout: page
 title: About
 permalink: /about/
 ---
-Hi, I'm Johnny and I live in the Shire. Thanks for visiting my site.
 
-I program and write about software development when I have the time. More information can be found through <a href="https://www.linkedin.com/" data-network="LinkedIn" data-proofer-ignore>LinkedIn.</a>
+I'll keep adding things here as I learn and grow :)
 
-----
+### More Information
 
-## The Website
-This site was made on an [Apple MBP](https://www.apple.com/) powered by [Jekyll](https://jekyllrb.com) on [Github Pages](https://pages.github.com).
-I'd love to hear your feedback on this site and my work.
+I'm a corrosion integrity engineer and currently enrolled in the Data Science Track at Lambda School
 
-----
+### Contact me
 
-## Etcetera
+Twitter: @sanjaykrishna
 
-- [Instagram](https://www.instagram.com/) for 📸
-- [Facebook](https://www.facebook.com/) for 🕺
+Email: hi [at] sanjaykrishna.dev
+
 
