@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I'll keep adding things here as I learn and grow :)
 
 ### More Information
 
@@ -14,6 +13,4 @@ I'm a corrosion integrity engineer and currently enrolled in the Data Science Tr
 
 Twitter: @sanjaykrishna
 
-Email: hi [at] sanjaykrishna.dev
-
-
+Email: hi [at] sanjaykrishna.dev 
