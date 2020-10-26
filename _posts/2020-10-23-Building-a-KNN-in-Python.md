@@ -45,6 +45,7 @@ Each one of them can be easily calculated using their Numpy inbuild functions or
 Here is the code snipped for the class
 
 ```
+
 class KNN:
     def __init__(self, k):
         self.k = k
